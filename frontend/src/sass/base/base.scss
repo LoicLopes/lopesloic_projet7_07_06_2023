@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 50px;
+  margin: auto;
+  flex: auto;
+  max-width: 1300px;
+  width: 100%;
+  @include media-query(Smartphone) {
+    padding: 0px 20px 10px 20px;
+  }
+}
