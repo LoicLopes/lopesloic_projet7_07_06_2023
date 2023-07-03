@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import icon_arrow from '../../assets/icons/arrow.png'
+
 function Collapse(props) {
   const [isOpen, setIsOpen] = useState(false)
   return (
@@ -8,7 +9,7 @@ function Collapse(props) {
         {props.title}
         <button onClick={() => setIsOpen((previousState) => !previousState)}>
           <img
-            className={`arrow' ${isOpen ? 'arrow-up' : 'arrow-down'}`}
+            className={`arrow ${isOpen ? 'arrow--up' : 'arrow--down'}`}
             src={icon_arrow}
             alt={isOpen ? 'close button' : 'open button'}
           />
