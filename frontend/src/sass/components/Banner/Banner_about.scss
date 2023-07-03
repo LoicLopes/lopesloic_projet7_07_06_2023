@@ -1,0 +1,17 @@
+.banner_about {
+  @include flex-center;
+  height: 225px;
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.2));
+  @include media-query(Smartphone) {
+    border-radius: 10px;
+  }
+  img {
+    position: absolute;
+    object-fit: cover;
+    filter: brightness(70%);
+  }
+}
